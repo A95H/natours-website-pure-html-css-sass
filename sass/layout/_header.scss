@@ -1,0 +1,42 @@
+@import "../abstracts/vairables";
+
+.header {
+    height: 95vh;
+    /*make transparent gradient color on the image*/
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/hero.jpg');
+    /* fit to the size of the box*/
+    background-size: cover;
+    /*make the image top still show*/
+    background-position: top;
+    /*to make curve . polygon is used to re-shape box polygon(x y , x y, x y , x y) corners from top left as clock wise*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+
+    @include respond(phone){
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        /*make element as free transform */
+        position: absolute;
+        /*set position top40px and left40px from parent element "header" because .header has position relative*/
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+        /*move the elemrnt it self from its center as free transform (left,top) */
+        text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+@keyframes moveInLeft {
+    0% {
+        /*start time*/
+        opacity: 0;
+        transform: translateX(-100px);
+        /* negative x value is to left*/
+    }
+
+    80% {
+        transform: translateX(20px);
+        /* positive x value is to right*/
+    }
+
+    100% {
+        /*end time*/
+        opacity: 1;
+        transform: translateX(0);
+        /* move to it's position*/
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        /*start time*/
+        opacity: 0;
+        transform: translateX(100px);
+        /* positive x value is to right*/
+    }
+
+    80% {
+        transform: translateX(-20px);
+        /* negative x value is to left*/
+    }
+
+    100% {
+        /*end time*/
+        opacity: 1;
+        transform: translateX(0);
+        /* move to it's position*/
+    }
+}
+
+@keyframes moveInBotton {
+    0% {
+        /*start time*/
+        opacity: 0;
+        transform: translateY(100px);
+        /* positive y value is to right*/
+    }
+
+    80% {
+        transform: translateX(-20px);
+        /* negative y value is to left*/
+    }
+
+    100% {
+        /*end time*/
+        opacity: 1;
+        transform: translateX(0);
+        /* move to it's position*/
+    }
+}
