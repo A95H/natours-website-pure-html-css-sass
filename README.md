@@ -2,6 +2,7 @@
 ## responsive website (mobile friendly)
 ## screenshots
 
+## Desktop View
 ![alt text](https://github.com/GenuisChip/natours-website-pure-html-css-sass/blob/master/img/Screenshot_2020-03-11-Screenshot.jpg)
 
 ## Mobile View
